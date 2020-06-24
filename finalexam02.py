@@ -21,6 +21,6 @@ class Point:
 
 p1 = Point(1,1)
 p2 = Point(2,2)
-print(Point.distance(p1, p2))
+print(p1.distance(p2))
 p3 = p1 + p2
 print("x:{0:d}, y:{1:d}".format(p3.getX(), p3.getY()))
