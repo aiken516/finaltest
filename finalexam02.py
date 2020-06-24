@@ -15,8 +15,8 @@ class Point:
     def distance(point1, point2):
         return ((point1.getX() - point2.getX())**2 + (point1.getY() - point2.getY())**2)**(1/2)
 
-    def __add__(point1, point2):
-        return Point(point1.getX() + point2.getX(), point1.getY() + point2.getY())
+    def __add__(self, point2):
+        return Point(self.getX() + point2.getX(), self.getY() + point2.getY())
 
 
 p1 = Point(1,1)
