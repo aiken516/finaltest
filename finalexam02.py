@@ -12,8 +12,8 @@ class Point:
     def getY(self):
         return self.__y
 
-    def distance(point1, point2):
-        return ((point1.getX() - point2.getX())**2 + (point1.getY() - point2.getY())**2)**(1/2)
+    def distance(self, point2):
+        return ((self.getX() - point2.getX())**2 + (self.getY() - point2.getY())**2)**(1/2)
 
     def __add__(self, point2):
         return Point(self.getX() + point2.getX(), self.getY() + point2.getY())
@@ -21,6 +21,6 @@ class Point:
 
 p1 = Point(1,1)
 p2 = Point(2,2)
-print(Point.distance(p1,p2))
+print(Point.distance(p1, p2))
 p3 = p1 + p2
-print("p1:{0:d}, p2:{1:d}".format(p3.getX(), p3.getY()))
+print("x:{0:d}, y:{1:d}".format(p3.getX(), p3.getY()))
